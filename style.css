@@ -1,0 +1,48 @@
+:root{
+    --first-color:#bc4749;
+    --second-color:#f2e8cf;
+    --third-color:#6a994e;
+    --font:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    font-family:var(--font);
+    background-color: var(--first-color);
+    color:var(--second-color);
+    margin:60px;
+}
+p, h3, h2, h1{
+    animation-name: animacja;
+    animation-duration: 1000ms;
+    animation-delay: 20ms;
+}
+@keyframes animacja {
+    0%{
+        color:var(--first-color);
+    }
+    100%{
+        color:var(--second-color);
+    }    
+}
+a {
+    text-decoration:none;
+    background-color: var(--first-color);
+    color:var(--third-color);
+    border:none;
+    padding:10px 20px;
+    border-radius:20px;
+    transition:250ms;
+}
+a:hover {
+    background-color: var(--third-color);
+    color:var(--second-color);
+}
+.lista {
+    margin-top:100px;
+}
+.header{
+    border-bottom:1px solid var(--second-color);
+}
+.marginn{
+    margin-top:25px;
+}
